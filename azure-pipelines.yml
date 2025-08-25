@@ -10,13 +10,14 @@ pool:
   name: SelfHosted
 
 steps:
+
 - task: AzureCLI@2
   inputs:
     azureSubscription: azureLaps
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
-      az account show
+      C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin\az account show
 
 - script: |
     terraform version
