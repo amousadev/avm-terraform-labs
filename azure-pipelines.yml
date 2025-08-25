@@ -17,6 +17,7 @@ steps:
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
+      $env:USERNAME
       C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin\az account show
 
 - script: |
