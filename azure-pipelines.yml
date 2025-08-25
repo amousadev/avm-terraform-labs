@@ -10,15 +10,7 @@ pool:
   name: SelfHosted
 
 steps:
-
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: azureLaps
-    scriptType: ps
-    scriptLocation: inlineScript
-    inlineScript: |
-      $env:USERNAME
-
 - script: |
     terraform version
+     $env:USERNAME
   displayName: 'display terraform versions Terraform'
