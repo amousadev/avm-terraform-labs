@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: mylaptop-agent
+  name: SelfHosted
 
 steps:
 - script: echo Hello, world!
