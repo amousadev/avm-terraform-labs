@@ -11,5 +11,5 @@ pool:
 
 steps:
 - script: |
-    whomai
+    whoami
   displayName: 'display terraform versions Terraform'
