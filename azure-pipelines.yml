@@ -10,9 +10,14 @@ pool:
   name: SelfHosted
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: azureLaps
+    scriptType: bash
+    scriptLocation: inlineScript
+    inlineScript: |
+      az account show
 
 - script: |
     terraform version
-  displayName: 'install Terraform'
+  displayName: 'display terraform versions Terraform'
