@@ -13,7 +13,7 @@ steps:
 - task: AzureCLI@2
   inputs:
     azureSubscription: azureLaps
-    scriptType: bash
+    scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
       az account show
