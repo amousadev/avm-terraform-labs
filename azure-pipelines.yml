@@ -21,7 +21,7 @@ steps:
     }
 
     # Confirm installation
-    az --version
+    az version
   displayName: 'Check and Install Azure CLI'
 - task: AzureCLI@2
   inputs:
