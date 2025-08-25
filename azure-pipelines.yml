@@ -11,6 +11,5 @@ pool:
 
 steps:
 - script: |
-    terraform version
-     $env:USERNAME
+    whomai
   displayName: 'display terraform versions Terraform'
